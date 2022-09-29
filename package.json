@@ -1,0 +1,18 @@
+{
+  "name": "cross",
+  "version": "1.0.0",
+  "description": "database for storing djh2 customs data",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "sqlite3": "^5.0.11",
+    "typescript": "^4.8.2"
+  },
+  "devDependencies": {
+    "@types/sqlite3": "^3.1.8"
+  }
+}

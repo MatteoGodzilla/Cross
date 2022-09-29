@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross: create a custom</title>
+</head>
+<body>
+    <form action="/api/v1/custom/new" method="post">
+        <!--
+            Inside an input 'name' is the property that is
+            sent as key for the value in the input
+        -->
+        <label for="idTagInput">idTag</label>
+        <input type="text" name="idTag" id="idTagInput">
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <div>
+        <input type="number" id="customID" min="0">
+        <button type="submit" onclick="GetCustom()">Get Custom</button>
+    </div>
+
+    <hr>
+
+    <form action="/api/v1/latest" method="get">
+        <button type="submit">Get Latest Customs</button>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
